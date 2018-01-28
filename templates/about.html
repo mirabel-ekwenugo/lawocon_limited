@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block title %} About {% endblock %}
+
+{% block content %}
+<section class="page-title bg-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>About Our Company</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about section">
+	<div class="container">
+		<div class="row">
+			<h2 class="mt-40">LAWOCON LIMITED is a building and civil engineering company, incorporated in the year 2011.</h2>
+			<p>Prior to its incorporation, the company had existed with its principal staff who had worked for and in partnership with public and private sectors, covering state government and international firms and meeting the needs of our clients whose focus is quality construction delivered on time and within budget.</p>
+			<p>LAWOCON LIMITED takes on the role of main contractor for small and medium size projects and also offers project management services directly to clients and contractors. We also proffer design and build solutions and specialized construction, in areas pertaining to water retaining reinforced concrete structures.</p>
+			<p>Our primary objective is to guarantee the satisfaction of our clients in all ramifications, during and after project execution. Our emphasis on clear communication and follow through procedures ensures that the client’s objectives are of utmost priority from planning to execution stages.</p>
+			<a href="{{ url_for ('static', filename='lawocon.docx') }}" class="btn btn-small mt-20" download="lawocon.docx">Download Company Profile</a>
+		</div>
+	</div>
+</section>
+
+<section class="about-feature bg-dark section dark-service">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="title">
+					<h2>Our project management and execution philosophy is:</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="service-item">
+		          <i class="ion-ios-lightbulb-outline"></i>
+		          <p>Create detail schedule and resource plan to meet clients project objective</p>
+		        </div>
+			</div>
+			<div class="col-md-4">
+				<div class="service-item">
+		          <i class="ion-ios-lightbulb-outline"></i>
+		          <p>Communicate clearly with all project stakeholders</p>
+		        </div>
+			</div>
+			<div class="col-md-4">
+				<div class="service-item">
+		          <i class="ion-ios-lightbulb-outline"></i>
+		          <p> Track project progress and fine-tune variations and deviations</p>
+		        </div>
+			</div>
+			<div class="col-md-4">
+				<div class="service-item">
+		          <i class="ion-ios-lightbulb-outline"></i>
+		          <p> Supervise closely to ensure optimum quality control</p>
+		        </div>
+			</div>
+			<div class="col-md-4">
+				<div class="service-item">
+		          <i class="ion-ios-lightbulb-outline"></i>
+		          <p>Complete and commission the project in record time</p>
+		        </div>
+			</div>
+			<div class="col-md-4">
+				<div class="service-item">
+		          <i class="ion-ios-lightbulb-outline"></i>
+		          <p>Amongst many other things</p>
+		        </div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="testimonial section-sm">
+	<div class="container">
+		<div class="col-md-12">
+			<div class="tabCommon">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#vision" data-toggle="tab">Vision</a></li>
+					<li><a href="#mission" data-toggle="tab">Mission</a></li>
+				</ul>
+				<div class="tab-content">
+					<div id="vision" class="tab-pane fade active in">
+						<p>Our primary objective is to guarantee the satisfaction of our clients in all ramifications, during and after project execution. Our emphasis on clear communication and follow through procedures ensures that the client’s objectives are of utmost priority from planning to execution stages.</p>
+					</div>
+					<div id="mission" class="tab-pane fade">
+						<p>We at LAWOCON LIMITED are dedicated to providing high quality building and civil engineering construction capable of meeting international standards within our clients budget.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+<section class="call-to-action bg-1 section-sm overly">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block">
+					<p>Quality assurance is placed on all project activities, particularly professional expertise, which is fundamental to long – term project quality. We give top priority to human reliability, because the quality of services provided by our firm is closely related to, and determined by human performance.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock %}

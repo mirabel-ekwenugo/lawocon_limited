@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content%}
+
+  <section class="page-title bg-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block">
+            <h1>Drop Us A Note</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact form start -->
+  <section class="contact-form">
+      <div class="container">
+          <div class="row">
+            {% if success %}
+              <p>Thank you for your message. We'll get back to you shortly.</p>
+            {% else %}
+
+              {% for message in form.name.errors %}
+                <div class="flash">{{ message }}</div>
+              {% endfor %}
+             
+              {% for message in form.email.errors %}
+                <div class="flash">{{ message }}</div>
+              {% endfor %}
+             
+              {% for message in form.subject.errors %}
+                <div class="flash">{{ message }}</div>
+              {% endfor %}
+             
+              {% for message in form.message.errors %}
+                <div class="flash">{{ message }}</div>
+              {% endfor %}
+
+                <form class="form" action="{{ url_for('contact_us') }}" method="POST">
+                    {{ form.hidden_tag() }}
+
+                        {{ form.name.label }} 
+                        {{ form.name }}
+
+                        {{ form.email.label }} 
+                        {{ form.email }}
+
+                   
+                        {{ form.subject.label }}
+                        {{ form.subject }}
+
+                        {{ form.message.label }} 
+                        {{ form.message }}
+                 
+                      {{ form.submit }}
+                </form>
+
+
+              <!-- <form>
+                  <div class="col-md-6 col-sm-12">
+                      <div class="block">
+                          
+                          <div class="form-group">
+                              <input name="user_name" type="text" class="form-control" placeholder="Your Name">
+                          </div>
+                          <div class="form-group">
+                              <input name="user_email" type="text" class="form-control" placeholder="Email Address">
+                          </div>
+                          <div class="form-group">
+                              <input name="user_subject" type="text" class="form-control" placeholder="Subject">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-sm-12">
+                      <div class="block">
+                          <div class="form-group-2">
+                              <textarea name="user_message" class="form-control" rows="3" placeholder="Your Message"></textarea>
+                          </div>
+                              <button class="btn btn-default" type="submit">Send Message</button>
+                      </div>
+                  </div>
+                  <div class="error" id="error">Sorry Messagenot sent</div>
+                  <div class="success" id="success">Message Sent</div>
+              </form> -->
+          {# </div>
+          <div class=" contact-box row">
+              <div class="col-md-6 col-sm-12">
+                  <div class="block">
+                      <h2>Stop By For A visit</h2>
+                      <ul class="address-block">
+                          <li>
+                              <i class="ion-ios-location-outline"></i>North Main Street,Brooklyn Australia
+                          </li>
+                          <li>
+                              <i class="ion-ios-email-outline"></i>Email: contact@mail.com
+                          </li>
+                          <li>
+                              <i class="ion-ios-telephone-outline"></i>Phone:+88 01672 506 744
+                          </li>
+                      </ul>
+                      <ul class="social-icons">
+                          <li>
+                              <a href="http://www.themefisher.com"><i class="ion-social-googleplus-outline"></i></a>
+                          </li>
+                          <li>
+                              <a href="http://www.themefisher.com"><i class="ion-social-linkedin-outline"></i></a>
+                          </li>
+                          <li>
+                              <a href="http://www.themefisher.com"><i class="ion-social-pinterest-outline"></i></a>
+                          </li>
+                          <li>
+                              <a href="http://www.themefisher.com"><i class="ion-social-dribbble-outline"></i></a>
+                          </li>
+                          <li>
+                              <a href="http://www.themefisher.com"><i class="ion-social-twitter-outline"></i></a>
+                          </li>
+                          <li>
+                              <a href="http://www.themefisher.com"><i class="ion-social-facebook-outline"></i></a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                  <div class="block">
+                      <h2>We Also Count In Google Map</h2>
+                      <div class="google-map">
+                          <div id="map"></div>
+                      </div>
+                  </div>
+              </div>
+ #}
+
+            <div class=" contact-box row">
+                <div class="col-md-6 col-sm-12">
+                  <div class="block">
+                    <h2>Stop By For A visit</h2>
+                    <ul class="address-block">
+                        <li>
+                            <i class="ion-ios-location-outline"></i>2nd Floor WAEC Building, 10 Zambezi Crescent, Maitama. Abuja
+                        </li>
+                        <li>
+                            <i class="ion-ios-email-outline"></i>Email: Lawoconprojects@gmail.com
+                        </li>
+                        <li>
+                            <i class="ion-ios-telephone-outline"></i>Phone: <a href="tel:+234 803 412 2200">+234 803 412 2200</a>, <a href="tel:+234 805 669 1962">+234 805 669 1962</a>, <a href="tel:+234 706 225 7846">+234 706 225 7846</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+  </section>
+ {% endif %}
+{% endblock %}

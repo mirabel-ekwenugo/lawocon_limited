@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+
+{% block title %}Index{% endblock %}
+
+{% block content %}
+
+    <!-- Slider Start -->
+    <section class="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <h1 class="animated fadeInUp">A Building and <br>  &#38; Civil Engineering Company</h1>
+                        <p class="animated fadeInUp">We guarantee the satisfaction of our clients in all ramifications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wrapper Start -->
+    <section class="about section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <div class="block">
+                        <div class="section-title">
+                            <h2>About Us</h2>
+                            <p>LAWOCON LIMITED is a building and civil engineering company, incorporated in the year 2011. Prior to its incorporation, the company had existed with its principal staff who had worked for and in partnership with public and private sectors, covering state government and international firms and meeting the needs of our clients whose focus is quality construction delivered on time and within budget.</p>
+                            <p>
+                                LAWOCON LIMITED takes on the role of main contractor for small and medium size projects and also offers project management services directly to clients and contractors. We also proffer design and build solutions and specialized construction, in areas pertaining to water retaining reinforced concrete structures.
+                            </p>
+                    </div>
+                </div><!-- .col-md-7 close -->
+            </div>
+        </div>
+    </section>
+
+    <section class="feature bg-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <h2 class="section-subtitle">WE PROVIDE ONLY THE BEST IN THE CONSTRUCTION INDUSTRY!!!</h2>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Start -->
+    <section class="service">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>Our Team</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="section-title">
+                    <h3><u>PROJECT MANAGEMENT AND TECHNICAL TEAM</u></h3>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-6 col-md-3">
+                    <div class="service-item">
+                      <h4>Engr.Lawani Omoghagbon</h4>
+                      <p>General Manager</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="service-item">
+                        <h4>Engr.Dage Johnson (MNSE/COREN)</h4>
+                        <p>Project Manager</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="service-item">
+                        <h4>Arc Nelson Beniowu</h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="service-item">
+                        <h4>Arc Daniel Awano</h4>
+                        <p>Architect</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-6 col-md-3">
+                    <div class="service-item">
+                        <h4>Engr.Femi Ayinla (MNSE/COREN) </h4>
+                        <p>Structural Design Lead</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="service-item">
+                        <h4>Engr. Olugbenga Oyinlade (MNSE/COREN)</h4>
+                        <p>Services Engineer</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="service-item">
+                        <h4>Mr Emmanuel Oigboke</h4>
+                        <p>Quantity Surveyor</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="service-item">
+                        <h4>Mrs Evans Onyebuike</h4>
+                        <p>Quantity Surveyor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="section-title">
+                    <h3><u>ADMINISTRATIVE STAFF</u></h3>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-6 col-md-3">
+                    <div class="service-item">
+                        <h4>Miss Onyinyechi Adah – (HND)</h4>
+                        <p>Admin. Secretary /Human Resource Manager</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="service-item">
+                        <h4>Barr. Onaivi Otokunrin</h4>
+                        <p>Legal Advisor</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="service-item">
+                        <h4>Alilu Usman - (Bsc.)</h4>
+                        <p>Accountant</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="service-item">
+                        <h4>Chinelo Anozie </h4>
+                        <p>Receptionist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action Start -->
+    <section class="call-to-action bg-1 section-sm overly">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <p>We at LAWOCON LIMITED are dedicated to providing high quality building <br>and civil engineering construction capable of meeting international standards within our clients budget.</p>
+                        <a class="btn btn-main btn-solid-border" href="{{ url_for('contact_us') }}">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
